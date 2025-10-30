@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo Please Select a Game
+
+read game
+
+if [[ $game = "1" ]] 
+then
+    multimc&
+elif [[ $game != "1" ]] 
+then 
+    steam&
+    if [[ $game = "2" ]] 
+    then
+    steam steam://rungameid/730&
+    elif [[ $game = "3" ]]
+    then 
+    steam steam://rungameid/322170&
+    fi
+fi
